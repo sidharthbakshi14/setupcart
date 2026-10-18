@@ -1,0 +1,53 @@
+{
+  "_note": "SYNTHETIC DEMO CATALOG - product names, prices and stock are illustrative, not real listings.",
+  "laptops": {
+    "usbc_dp": {
+      "label": "USB-C with DisplayPort output + HDMI port",
+      "native_outputs": ["hdmi"],
+      "host_ports": ["usbc_dp", "usb_a"],
+      "max_external_displays": 2
+    },
+    "thunderbolt": {
+      "label": "Thunderbolt 3/4 + HDMI port",
+      "native_outputs": ["hdmi"],
+      "host_ports": ["thunderbolt", "usbc_dp", "usb_a"],
+      "max_external_displays": 2
+    },
+    "hdmi_only": {
+      "label": "HDMI only (USB-C is data/charging only)",
+      "native_outputs": ["hdmi"],
+      "host_ports": ["usb_a"],
+      "max_external_displays": 1
+    }
+  },
+  "products": [
+    {"id": "MON-22A", "role": "monitor", "name": "Acme 22\" FHD IPS Monitor", "price": 7499, "stock": 12, "rating": 3.6, "size_in": 22, "width_cm": 50, "inputs": ["hdmi", "vga"], "included_cable": "hdmi"},
+    {"id": "MON-215A", "role": "monitor", "name": "Acme 21.5\" FHD Monitor", "price": 6299, "stock": 3, "rating": 3.3, "size_in": 21.5, "width_cm": 49, "inputs": ["hdmi", "vga"], "included_cable": "hdmi"},
+    {"id": "MON-24A", "role": "monitor", "name": "Acme 24\" FHD IPS Monitor", "price": 9299, "stock": 8, "rating": 3.9, "size_in": 24, "width_cm": 54, "inputs": ["hdmi", "dp"], "included_cable": "hdmi"},
+    {"id": "MON-24N", "role": "monitor", "name": "Nova 24\" FHD 100Hz Monitor", "price": 10499, "stock": 5, "rating": 4.2, "size_in": 24, "width_cm": 54, "inputs": ["hdmi", "dp"], "included_cable": null},
+    {"id": "MON-27N", "role": "monitor", "name": "Nova 27\" QHD IPS Monitor", "price": 18999, "stock": 4, "rating": 4.6, "size_in": 27, "width_cm": 61, "inputs": ["hdmi", "dp"], "included_cable": "dp"},
+    {"id": "MON-27V", "role": "monitor", "name": "Vista 27\" 4K Monitor", "price": 27999, "stock": 0, "rating": 4.8, "size_in": 27, "width_cm": 61, "inputs": ["hdmi", "dp"], "included_cable": "dp"},
+
+    {"id": "HUB-1H", "role": "connection", "name": "LinkHub 7-in-1 USB-C Hub (1x HDMI)", "price": 1799, "stock": 20, "rating": 3.8, "host_port": "usbc_dp", "outputs": ["hdmi"], "uses_laptop_gpu": true},
+    {"id": "DOCK-2H", "role": "connection", "name": "LinkDock USB-C MST Dock (2x HDMI)", "price": 6499, "stock": 6, "rating": 4.1, "host_port": "usbc_dp", "outputs": ["hdmi", "hdmi"], "uses_laptop_gpu": true},
+    {"id": "DOCK-TB4", "role": "connection", "name": "BoltDock Thunderbolt 4 Dock (HDMI + DP)", "price": 17999, "stock": 3, "rating": 4.7, "host_port": "thunderbolt", "outputs": ["hdmi", "dp"], "uses_laptop_gpu": true},
+    {"id": "ADPT-DL", "role": "connection", "name": "ViewLink USB-A DisplayLink Adapter (1x HDMI)", "price": 4999, "stock": 7, "rating": 3.7, "host_port": "usb_a", "outputs": ["hdmi"], "uses_laptop_gpu": false, "note": "Needs DisplayLink driver installed"},
+
+    {"id": "CBL-HDMI", "role": "cable", "name": "HDMI 2.0 Cable 1.5m", "price": 349, "stock": 50, "rating": 4.0, "cable_type": "hdmi"},
+    {"id": "CBL-DP", "role": "cable", "name": "DisplayPort 1.4 Cable 1.8m", "price": 549, "stock": 30, "rating": 4.1, "cable_type": "dp"},
+
+    {"id": "KB-W", "role": "keyboard", "name": "Basic Wired Keyboard", "price": 699, "stock": 40, "rating": 3.2},
+    {"id": "KB-WL", "role": "keyboard", "name": "Slim Wireless Keyboard", "price": 1799, "stock": 15, "rating": 3.9},
+    {"id": "KB-MECH", "role": "keyboard", "name": "TKL Mechanical Keyboard", "price": 3999, "stock": 6, "rating": 4.5},
+
+    {"id": "MS-W", "role": "mouse", "name": "Basic Wired Mouse", "price": 399, "stock": 60, "rating": 3.2},
+    {"id": "MS-WL", "role": "mouse", "name": "Wireless Mouse", "price": 999, "stock": 25, "rating": 3.9},
+    {"id": "MS-ERGO", "role": "mouse", "name": "Ergonomic Vertical Mouse", "price": 2499, "stock": 8, "rating": 4.4},
+
+    {"id": "CAM-720", "role": "webcam", "name": "720p Webcam", "price": 1499, "stock": 10, "rating": 3.3},
+    {"id": "CAM-1080", "role": "webcam", "name": "1080p Webcam with Mic", "price": 3499, "stock": 2, "rating": 4.3},
+
+    {"id": "HS-USB", "role": "headset", "name": "USB Headset with Mic", "price": 1999, "stock": 9, "rating": 3.8},
+    {"id": "HS-BT", "role": "headset", "name": "Bluetooth ANC Headset", "price": 5999, "stock": 0, "rating": 4.5}
+  ]
+}
